@@ -1,4 +1,7 @@
+const base = process.env.NODE_ENV === 'development' ? '' : './'
 module.exports = {
+	base,
+	dest: './dist',
 	title: 'comp-vuepress133',
 	description: 'comp 组件库文档。333',
 	themeConfig: {
