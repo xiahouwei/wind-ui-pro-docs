@@ -1,8 +1,8 @@
 ---
 home: true
 heroImage: /hero.png   # 注意这里可以使外链，也可以是静态资源
-heroText: Hero 标题
-tagline: Hero 副标题
+heroText: 风行ui组件库
+tagline: wind-ui
 actionText: 快速上手 →
 actionLink: /guide/  # 这里是点击快速上手后的跳转链接。
 features:

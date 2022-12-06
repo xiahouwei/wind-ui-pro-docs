@@ -1,10 +1,9 @@
 const base = process.env.NODE_ENV === 'development' ? '' : '/wind-ui-pro-docs/'
-console.log(base)
 module.exports = {
 	base,
 	dest: './dist',
-	title: 'comp-vuepress133',
-	description: 'comp 组件库文档。333',
+	title: 'wind-ui',
+	description: 'wind-ui组件库文档。',
 	themeConfig: {
 		nav: [
 		  // 一级导航
@@ -26,10 +25,12 @@ module.exports = {
 				collapsable: false,
 				children: [
 					['../guide/Button.md', 'Button'],
-					['../guide/Card.md', 'Card']
+					['../guide/Card.md', 'Card'],
+					['../guide/AppContainer.md', 'AppContainer'],
 				]
 				}
 			]
 		}
-	}
+	},
+	plugins: ['demo-container']
 }

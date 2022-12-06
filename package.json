@@ -13,6 +13,7 @@
   "license": "ISC",
   "devDependencies": {
     "vuepress": "^1.9.7",
-    "wind-ui-pro": "^0.1.0"
+    "vuepress-plugin-demo-container": "^0.2.0",
+    "wind-ui-pro": "^0.1.2"
   }
 }
