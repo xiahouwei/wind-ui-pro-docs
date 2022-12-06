@@ -1,4 +1,4 @@
-const base = process.env.NODE_ENV === 'development' ? '' : './'
+const base = process.env.NODE_ENV === 'development' ? '' : '/wind-ui-pro-docs'
 module.exports = {
 	base,
 	dest: './dist',
@@ -7,7 +7,7 @@ module.exports = {
 	themeConfig: {
 		nav: [
 		  // 一级导航
-		  { text: '指南', link: '/guide/' },
+		  { text: '指南', link: `${base}/guide/` },
 		  // 下拉列表导航
 		  {
 			text: '了解更多',
@@ -18,7 +18,7 @@ module.exports = {
 		  }
 		],
 		sidebar: {
-			'/guide/': [
+			[`${base}/guide/`]: [
 				['', '介绍'], // '' 等价于 /guide/
 				{
 				title: '组件',
