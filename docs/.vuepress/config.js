@@ -21,17 +21,20 @@ module.exports = {
 			'/guide/': [
 				['', '介绍'], // '' 等价于 /guide/
 				{
-				title: '组件',
-				collapsable: false,
-				children: [
-					['../guide/Button.md', 'Button'],
-					['../guide/Card.md', 'Card'],
-					['../guide/AppContainer.md', 'AppContainer 布局容器'],
-					['../guide/BarCode.md', 'BarCode 条形码'],
-					['../guide/Select.md', 'Select 选择框'],
-					['../guide/SelectTab.md', 'SelectTab 分页选择框'],
-					['../guide/SelectCycle.md', 'SelectCycle 周期选择框'],
-				]
+					title: '组件',
+					collapsable: false,
+					children: [
+						['../guide/Button.md', 'Button'],
+						['../guide/Card.md', 'Card'],
+						['../guide/AppContainer.md', 'AppContainer 布局容器'],
+						['../guide/BarCode.md', 'BarCode 条形码'],
+						['../guide/Select.md', 'Select 选择框'],
+						['../guide/SelectTab.md', 'SelectTab 分页选择框'],
+						['../guide/SelectCycle.md', 'SelectCycle 周期选择框'],
+						['../guide/Image.md', 'Image 图片'],
+						['../guide/QrCode.md', 'QrCode 二维码'],
+						['../guide/Tag.md', 'Tag 标签']
+					]
 				}
 			]
 		}

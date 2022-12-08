@@ -1,5 +1,5 @@
-### BarCode 条形码
-用于渲染条形码的组件：
+### Image 图片
+用于渲染图片的组件：
 
 
 ### 基础用法
@@ -10,14 +10,13 @@
 ```html
 <template>
   <div >
-	<w-barcode :sourceCode="barcode"></w-barcode>
+	  <w-image></w-image>
   </div>
 </template>
 <script>
 export default {
   data() {
     return {
-      barcode: '0123456789'
     }
   }
 }
