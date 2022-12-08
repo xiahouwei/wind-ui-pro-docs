@@ -4,13 +4,12 @@
 ### 基础用法
 适用广泛的基础单选
 
-::: demo `v-model`的值为当前被选中的`option`的 id 属性值。
+::: demo `v-model`的值为当前被选中的`选项`的 id 属性值。
 ```html
 <template>
   <w-select
     v-model="value"
     :optionlist="optionlist"
-    class="select-input"
   >
   </w-select>
 </template>
@@ -44,13 +43,12 @@ export default {
 
 ### 有禁用选项
 
-::: demo 在`option`中，设定`disabled`值为 true，即可禁用该选项。
+::: demo 在`选项`中，设定`disabled`值为 true，即可禁用该选项。
 ```html
 <template>
   <w-select
     v-model="value"
     :optionlist="optionlist"
-    class="select-input"
   >
   </w-select>
 </template>
@@ -85,13 +83,12 @@ export default {
 
 ### 有隐藏选项
 
-::: demo 在`option`中，设定`visibleFlag`值为 false，即可隐藏该选项。
+::: demo 在`选项`中，设定`visibleFlag`值为 false，即可隐藏该选项。
 ```html
 <template>
   <w-select
     v-model="value"
     :optionlist="optionlist"
-    class="select-input"
   >
   </w-select>
 </template>
@@ -134,7 +131,6 @@ export default {
     v-model="value"
     disabled
     :optionlist="optionlist"
-    class="select-input"
   >
   </w-select>
 </template>
@@ -176,7 +172,6 @@ export default {
     v-model="value"
     clearable
     :optionlist="optionlist"
-    class="select-input"
   >
   </w-select>
 </template>
@@ -218,7 +213,6 @@ export default {
     v-model="value"
     :optionRender="optionRender"
     :optionlist="optionlist"
-    class="select-input"
   >
   </w-select>
 </template>
@@ -269,7 +263,6 @@ export default {
     v-model="value"
     :filterKeys="filterKeys"
     :optionlist="optionlist"
-    class="select-input"
   >
   </w-select>
 </template>
@@ -311,7 +304,6 @@ export default {
   <w-select
     v-model="value"
     :optionlist="optionlist"
-    class="select-input"
   >
   </w-select>
 </template>
@@ -339,7 +331,7 @@ export default {
 ### Attributes
 | 参数 | 说明 | 类型 | 可选值 | 默认值 |
 |-----|-----|------|-------|------ |
-| value/v-model | 绑定值 | boolean / string / number | — | — |
+| value/v-model | 绑定值，对应选项数据中id值 | boolean / string / number | — | — |
 | disabled | 是否禁用 | boolean | — | false |
 | clearable | 是否清除功能 | boolean | — | false |
 | size | 输入框尺寸 | string | medium / small / mini | mini |
