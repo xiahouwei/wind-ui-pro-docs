@@ -34,7 +34,9 @@ module.exports = {
 						['../guide/Icon.md', 'Icon 图标'],
 						['../guide/Image.md', 'Image 图片'],
 						['../guide/QrCode.md', 'QrCode 二维码'],
-						['../guide/Tag.md', 'Tag 标签']
+						['../guide/Tag.md', 'Tag 标签'],
+						['../guide/TreeVirtual.md', 'TreeVirtual 虚拟渲染树'],
+						['../guide/Conifrm.md', 'Confirm 确认框']
 					]
 				}
 			]

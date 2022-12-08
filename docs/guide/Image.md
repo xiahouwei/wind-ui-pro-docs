@@ -10,110 +10,36 @@
 ```html
 <template>
   <div >
-	  <w-image></w-image>
+	  <w-image src="https://pic.imgdb.cn/item/63919df3b1fccdcd36c4ff26.jpg" class="image"></w-image>
   </div>
 </template>
-<script>
-export default {
-  data() {
-    return {
-    }
-  }
+<style>
+.image { 
+  width: 200px;
 }
-</script>
+</style>
 :::
 
-### 宽度选项
+### 图片读取失败
 
-:::demo 使用`width`属性来定义 条形码宽度间隔。
+:::demo 当图片读取失败, 会显示默认图片
 
 ```html
 <template>
   <div >
-	<w-barcode :sourceCode="barcode" :width="4"></w-barcode>
+	  <w-image class="image"></w-image>
   </div>
 </template>
-<script>
-export default {
-  data() {
-    return {
-      barcode: '0123456789'
-    }
-  }
+<style>
+.image { 
+  width: 200px;
 }
-</script>
+</style>
 :::
 
-### 高度选项
-
-:::demo 使用`height`属性来定义 条形码高度。
-
-```html
-<template>
-  <div >
-	<w-barcode :sourceCode="barcode" :height="20"></w-barcode>
-  </div>
-</template>
-<script>
-export default {
-  data() {
-    return {
-      barcode: '0123456789'
-    }
-  }
-}
-</script>
-:::
-
-### 字号选项
-
-:::demo 使用`fontSize`属性来定义 条形码的字体大小。
-
-```html
-<template>
-  <div >
-	<w-barcode :sourceCode="barcode" :fontSize="20"></w-barcode>
-  </div>
-</template>
-<script>
-export default {
-  data() {
-    return {
-      barcode: '0123456789'
-    }
-  }
-}
-</script>
-:::
-
-### 文本选项
-
-:::demo 使用`displayValue`属性来定义 条形码的文本是否显示。
-
-```html
-<template>
-  <div >
-	<w-barcode :sourceCode="barcode" :displayValue="false"></w-barcode>
-  </div>
-</template>
-<script>
-export default {
-  data() {
-    return {
-      barcode: '0123456789'
-    }
-  }
-}
-</script>
-:::
 
 ### Attributes
 | 参数      | 说明    | 类型      | 可选值       | 默认值   |
 |---------- |-------- |---------- |-------------  |-------- |
-| sourceCode | 条码值   | string  |         |        |
-| width | 条码间隔   | number  |         |     2   |
-| height | 条码高度  | number  |         |     50   |
-| fontSize | 条码字体   | number  |         |   14     |
-| format | 条码类型   | string  | All, CODE128 ,CODE39 ,EAN / UPC, ITF  ,MSI ,Pharmacode  |   CODE128     |
-| displayValue | 条码值是否显示   | boolean  |   true/false      |    true    |
+| src | 图片路径   | string  |         |        |
 

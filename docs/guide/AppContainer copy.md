@@ -64,11 +64,11 @@ export default {
     }
   },
   methods: {
-	onClickBtn () {
-		this.$fxConfirm('确定关闭？').then(() => {
-			console.log('close')
-		})
-	}
+    onClickBtn () {
+      this.$fxConfirm('确定关闭？').then(() => {
+        console.log('close')
+      })
+    }
   }
 }
 </script>
