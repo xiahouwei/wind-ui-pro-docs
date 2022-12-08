@@ -7,7 +7,7 @@ module.exports = {
 	themeConfig: {
 		nav: [
 		  // 一级导航
-		  { text: '指南', link: '/guide/' },
+		  { text: '组件', link: '/component/' },
 		  // 下拉列表导航
 		  {
 			text: '了解更多',
@@ -18,27 +18,25 @@ module.exports = {
 		  }
 		],
 		sidebar: {
-			'/guide/': [
+			'/component/': [
 				['', '介绍'], // '' 等价于 /guide/
 				{
 					title: '组件',
 					collapsable: false,
 					children: [
-						['../guide/Button.md', 'Button'],
-						['../guide/Card.md', 'Card'],
-						['../guide/AppContainer.md', 'AppContainer 布局容器'],
-						['../guide/BarCode.md', 'BarCode 条形码'],
-						['../guide/Select.md', 'Select 选择框'],
-						['../guide/SelectTab.md', 'SelectTab 分页选择框'],
-						['../guide/SelectCycle.md', 'SelectCycle 周期选择框'],
-						['../guide/Icon.md', 'Icon 图标'],
-						['../guide/Loading.md', 'Loading 加载'],
-						['../guide/Image.md', 'Image 图片'],
-						['../guide/QrCode.md', 'QrCode 二维码'],
-						['../guide/Tag.md', 'Tag 标签'],
-						['../guide/TreeVirtual.md', 'TreeVirtual 虚拟渲染树'],
-						['../guide/Conifrm.md', 'Confirm 确认框'],
-						['../guide/Message.md', 'Message 消息提示']
+						['../component/AppContainer.md', 'AppContainer 布局容器'],
+						['../component/BarCode.md', 'BarCode 条形码'],
+						['../component/Select.md', 'Select 选择框'],
+						['../component/SelectTab.md', 'SelectTab 分页选择框'],
+						['../component/SelectCycle.md', 'SelectCycle 周期选择框'],
+						['../component/Icon.md', 'Icon 图标'],
+						['../component/Loading.md', 'Loading 加载'],
+						['../component/Image.md', 'Image 图片'],
+						['../component/QrCode.md', 'QrCode 二维码'],
+						['../component/Tag.md', 'Tag 标签'],
+						['../component/TreeVirtual.md', 'TreeVirtual 虚拟渲染树'],
+						['../component/Conifrm.md', 'Confirm 确认框'],
+						['../component/Message.md', 'Message 消息提示']
 					]
 				}
 			]
