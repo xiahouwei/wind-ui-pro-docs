@@ -31,6 +31,7 @@ module.exports = {
 						['../component/SelectCycle.md', 'SelectCycle 周期选择框'],
 						['../component/Icon.md', 'Icon 图标'],
 						['../component/Loading.md', 'Loading 加载'],
+						['../component/Popover.md', 'Popover 弹出框'],
 						['../component/Image.md', 'Image 图片'],
 						['../component/QrCode.md', 'QrCode 二维码'],
 						['../component/Tag.md', 'Tag 标签'],
