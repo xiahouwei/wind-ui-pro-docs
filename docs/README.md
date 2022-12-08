@@ -4,7 +4,7 @@ heroImage: /hero.png   # 注意这里可以使外链，也可以是静态资源
 heroText: 风行ui组件库
 tagline: wind-ui-pro for vue2
 actionText: 开始使用
-actionLink: /component/  # 这里是点击快速上手后的跳转链接。
+actionLink: /component/installation.html  # 这里是点击快速上手后的跳转链接。
 features:
 - title: 简洁至上
   details: 以 Markdown 为中心的项目结构，以最少的配置帮助你专注于写作。
