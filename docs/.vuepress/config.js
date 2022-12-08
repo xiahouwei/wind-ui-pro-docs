@@ -28,6 +28,7 @@ module.exports = {
 					['../guide/Card.md', 'Card'],
 					['../guide/AppContainer.md', 'AppContainer 布局容器'],
 					['../guide/BarCode.md', 'BarCode 条形码'],
+					['../guide/Select.md', 'Select 选择框'],
 				]
 				}
 			]
