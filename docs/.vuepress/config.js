@@ -32,6 +32,7 @@ module.exports = {
 						['../guide/SelectTab.md', 'SelectTab 分页选择框'],
 						['../guide/SelectCycle.md', 'SelectCycle 周期选择框'],
 						['../guide/Icon.md', 'Icon 图标'],
+						['../guide/Loading.md', 'Loading 加载'],
 						['../guide/Image.md', 'Image 图片'],
 						['../guide/QrCode.md', 'QrCode 二维码'],
 						['../guide/Tag.md', 'Tag 标签'],
