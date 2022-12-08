@@ -38,7 +38,9 @@ module.exports = {
 						['../component/Tag.md', 'Tag 标签'],
 						['../component/TreeVirtual.md', 'TreeVirtual 虚拟渲染树'],
 						['../component/Conifrm.md', 'Confirm 确认框'],
-						['../component/Message.md', 'Message 消息提示']
+						['../component/Message.md', 'Message 消息提示'],
+						['../component/ImagePreview.md', 'ImagePreview 图片预览'],
+						['../component/Upload.md', 'Upload 上传文件']
 					]
 				}
 			]
