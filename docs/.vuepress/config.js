@@ -30,6 +30,7 @@ module.exports = {
 					['../guide/BarCode.md', 'BarCode 条形码'],
 					['../guide/Select.md', 'Select 选择框'],
 					['../guide/SelectTab.md', 'SelectTab 分页选择框'],
+					['../guide/SelectCycle.md', 'SelectCycle 周期选择框'],
 				]
 				}
 			]
