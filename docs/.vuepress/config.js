@@ -2,8 +2,8 @@ const base = process.env.NODE_ENV === 'development' ? '' : '/wind-ui-pro-docs/'
 module.exports = {
 	base,
 	dest: './dist',
-	title: 'wind-ui',
-	description: 'wind-ui组件库文档。',
+	title: 'wind-ui-pro',
+	description: 'wind-ui-pro组件库文档。',
 	themeConfig: {
 		nav: [
 		  // 一级导航
@@ -26,7 +26,8 @@ module.exports = {
 				children: [
 					['../guide/Button.md', 'Button'],
 					['../guide/Card.md', 'Card'],
-					['../guide/AppContainer.md', 'AppContainer'],
+					['../guide/AppContainer.md', 'AppContainer 布局容器'],
+					['../guide/BarCode.md', 'BarCode 条形码'],
 				]
 				}
 			]
