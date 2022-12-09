@@ -8,12 +8,12 @@
 <w-icon
   width="40px"
   height="40px"
-  type="total-stock-money"
+  type="auth-setting"
 ></w-icon>
 <w-icon
   width="40px"
   height="40px"
-  type="total-cost-money"
+  type="connect-employee"
 ></w-icon>
 ```
 :::
@@ -55,7 +55,7 @@ export default {
   disabled
   width="40px"
   height="40px"
-  type="total-order-size"
+  type="file-type-word"
 ></w-icon>
 ```
 :::
