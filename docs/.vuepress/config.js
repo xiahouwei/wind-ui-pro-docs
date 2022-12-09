@@ -73,6 +73,7 @@ module.exports = {
 							title: 'Navigation',
 							collapsable: false,
 							children: [
+								['../component/Link.md', 'Link 文字链接']
 							]
 						}
 					]
