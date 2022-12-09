@@ -1,6 +1,6 @@
 ---
 home: true
-heroImage: /hero.png   # 注意这里可以使外链，也可以是静态资源
+heroImage: /home-icon.jpg   # 注意这里可以使外链，也可以是静态资源
 heroText: 风行ui组件库
 tagline: wind-ui-pro for vue2
 actionText: 开始使用
