@@ -46,6 +46,7 @@ module.exports = {
 								['../component/SelectTab.md', 'SelectTab 分页选择框'],
 								['../component/SelectCycle.md', 'SelectCycle 周期选择框'],
 								['../component/Input.md', 'Input 输入框'],
+								['../component/Switch.md', 'Switch 开关'],
 							]
 						},
 						{
