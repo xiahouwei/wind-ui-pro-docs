@@ -8,14 +8,15 @@
 :::demo 绑定v-model到一个Boolean类型的变量。可以使用active-color属性与inactive-color属性来设置开关的背景色。
 
 ```html
-<w-switch
-  v-model="value"
-  :active-value='true'
-  :inactive-value='false'
-  active-color="#13ce66"
-  inactive-color="#ff4949">
-</w-switch>
-
+<template>
+  <w-switch
+    v-model="value"
+    :active-value='true'
+    :inactive-value='false'
+    active-color="#13ce66"
+    inactive-color="#ff4949">
+  </w-switch>
+</template>
 <script>
   export default {
     data() {
@@ -25,6 +26,7 @@
     }
   };
 </script>
+```
 :::
 
 ### 文字描述
@@ -55,6 +57,7 @@
     }
   };
 </script>
+```
 :::
 
 ### 禁用状态
@@ -79,6 +82,7 @@
     }
   };
 </script>
+```
 :::
 
 ### Attributes
