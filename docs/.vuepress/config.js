@@ -69,6 +69,7 @@ module.exports = {
 							collapsable: false,
 							children: [
 								['../component/Conifrm.md', 'Confirm 确认框'],
+								['../component/ContextMenu.md', 'ContextMenu 右键菜单'],
 								['../component/Message.md', 'Message 消息提示'],
 								['../component/ImagePreview.md', 'ImagePreview 图片预览'],
 								['../component/Upload.md', 'Upload 上传文件']
