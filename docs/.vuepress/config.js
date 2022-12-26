@@ -26,7 +26,8 @@ module.exports = {
 							title: 'Layout',
 							collapsable: false,
 							children: [
-								['../component/AppContainer.md', 'AppContainer 布局容器']
+								['../component/AppContainer.md', 'AppContainer 布局容器'],
+								['../component/Collapse.md', 'Collapse 折叠面板']
 							]
 						},
 						{
