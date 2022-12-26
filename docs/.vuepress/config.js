@@ -28,7 +28,8 @@ module.exports = {
 							children: [
 								['../component/AppContainer.md', 'AppContainer 布局容器'],
 								['../component/Collapse.md', 'Collapse 折叠面板'],
-								['../component/IndexList.md', 'IndexList 索引列表']
+								['../component/IndexList.md', 'IndexList 索引列表'],
+								['../component/ScrollBar.md', 'ScrollBar 滚动条']
 							]
 						},
 						{
