@@ -77,14 +77,16 @@ export default {
 </style>
 :::
 
+### 全屏高度,更多按钮
+Dialog 有时需要高度占满屏幕, 并且设置一些按钮
 
-:::demo 需要设置v-model属性，它接收Boolean，当为true时显示 Dialog。Dialog 分为两个部分：body和footer，footer需要具名为footer的slot。title属性用于定义标题，它是可选的，默认值为空。最后，本例还展示了before-close的用法。
+:::demo heightFullscreen用于设置高度占满屏幕, moreBtnOption用于设置更多按钮
 
 ```html
 <template>
   <div ref="container" class="container">
 	<el-button type="text" @click="dialogVisible = true">点击打开 Dialog</el-button>
-	<w-dialog v-model="dialogVisible" :title="dialogTitle" width="450px" :beforeClose="handleClose" heightFullscreen showMoreBtn>
+	<w-dialog v-model="dialogVisible" :title="dialogTitle" width="450px" heightFullscreen :moreBtnOption="moreBtnOption">
 		<w-scroll-bar class="scroll-container">
 			<div v-for="item in list" :key="item.id" :id="item.id" class="scroll-item">{{item.text}}</div>
 		</w-scroll-bar>
@@ -129,15 +131,31 @@ export default {
 		}]
     }
   },
-  methods: {	
-	handleClose(done) {
-		this.$fxConfirm('确认关闭？')
-			.then(_ => {
-			done();
-			})
-			.catch(_ => {});
-		}
+  computed: {
+	moreBtnOption () {
+		return [{
+			label: '按钮1',
+			click: this.onBtnClick1
+		}, {
+			label: '按钮2',
+			click: this.onBtnClick1
+		}, {
+			label: '按钮3',
+			click: this.onBtnClick1
+		}]
 	}
+  },
+  methods: {
+	onBtnClick1 () {
+		console.log('click1')
+	},
+	onBtnClick2 () {
+		console.log('click2')
+	},
+	onBtnClick3 () {
+		console.log('click3')
+	}
+  }
 }
 </script>
 <style>
@@ -154,9 +172,35 @@ export default {
 ### Attributes
 | 参数      | 说明    | 类型      | 可选值       | 默认值   |
 |---------- |-------- |---------- |-------------  |-------- |
-| this.$fxContextMenu.init(el, options) | 创建自定义菜单   | Function  |   |    |
-| el | 自定义菜单所在dom元素   |  dom |  |    |
-| options.menuList | 自定义菜单列表  | array  |   |    |
-| options.menuList.label | 自定义菜单标题 |  string |   |    |
-| options.menuList.click | 点击自定义菜单回调 |  Funciton |   |    |
-| options.beforeShow | 显示自定义菜单前回调 | Function  | 返回真值则显示, 返回假值则不显示  |    |
+| value| 窗口开启/关闭   | Boolean  |   |    |
+| title | 标题   |  String |  |    |
+| titleClass | 标题class   |  String, Array, Object |  |    |
+| titleStyle | 标题style   |  Object |  |    |
+| width | 宽度   |  String |  |  50%  |
+| fullscreen | 全屏   |  Boolean |  |  false  |
+| heightFullscreen | 高度填充整个屏幕   |  Boolean |  |  false  |
+| positionCenter | 定位居中   |  Boolean |  |  false  |
+| top | 距离顶部高度   |  string |  |  15vh  |
+| closeOnClickModal | 点击遮罩关闭   |  Boolean |  |  false  |
+| showMoreBtn | 显示更多按钮   |  Boolean |  |  false  |
+| moreBtnOption | 更多按钮设置   |  Array |  |    |
+| footAlign | foot对齐方式   |  String |  |  right  |
+| beforeClose | 点击X按钮关闭前回调   | Function |  |   |
+| showClose | 是否显示关闭按钮   | Boolean |  | true  |
+| closeOnPressEscape | 是否可以通过按下 ESC 关闭 Dialog   | Boolean |  | true  |
+
+
+### Slot
+| name      | 说明    |
+|---------- |-------- |
+| — | 内容插槽   |
+| footer | 底部插槽   |
+| tools | 更多-按钮栏 插槽   |
+
+
+### Events
+| 名称      | 说明    |
+|---------- |-------- |
+| — | 内容插槽   |
+| close | Dialog 关闭的回调   |
+| closed | Dialog 关闭动画结束时的回调  |
