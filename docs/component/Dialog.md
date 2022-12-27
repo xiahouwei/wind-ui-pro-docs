@@ -201,6 +201,5 @@ export default {
 ### Events
 | 名称      | 说明    |
 |---------- |-------- |
-| — | 内容插槽   |
 | close | Dialog 关闭的回调   |
 | closed | Dialog 关闭动画结束时的回调  |
