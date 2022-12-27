@@ -85,3 +85,10 @@ export default {
 | title | 面板标题   | string  |  —   |    —    |
 | disabled | 是否禁用   | boolean  |  true / false   |    false    |
 | showArrow | 是否显示箭头   | boolean  |  true / false   |    true    |
+
+
+### Slot
+| name      | 说明    |
+|---------- |-------- |
+| — | 折叠面板内容   |
+| title-slot | 折叠面板标题   |
