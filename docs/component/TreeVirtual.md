@@ -14,7 +14,7 @@
 				ref="organTree"
 				:data="currentTreeData"
 				highlight-current
-        @node-click="onTreeItemClick"
+        		@node-click="onTreeItemClick"
 			>
 			</w-tree-virtual>
 		</div>
@@ -52,7 +52,8 @@ export default {
   },
   methods: {
     onTreeItemClick (treeItem) {
-      console.log('onTreeItemClick', treeItem)
+      	console.log('onTreeItemClick', treeItem)
+		this.$fxMessage.success('点击了树元素')
     }
   }
 }

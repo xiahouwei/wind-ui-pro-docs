@@ -17,7 +17,7 @@ export default {
   methods: {
     onConfirmClick () {
       this.$fxConfirm('是否确认').then(() => {
-        console.log('confirm')
+        this.$fxMessage.success('已确认')
       })
     }
   }
@@ -41,7 +41,7 @@ export default {
   methods: {
     onAlertClick (treeItem) {
       this.$fxAlert('确认内容').then(() => {
-        console.log('alert')
+        this.$fxMessage.success('已确认')
       })
     },
     // onConfirmClick (treeItem) {
@@ -67,7 +67,7 @@ export default {
   methods: {
     onPromptClick (treeItem) {
       this.$fxPrompt('是否确认').then((res) => {
-        console.log('prompt', res)
+        this.$fxMessage.success(`确认内容:${res.value}`)
       })
     }
   }

@@ -60,6 +60,7 @@ export default {
   methods: {
 	onListClick (item) {
 		console.log(item)
+		this.$fxMessage.success('点击了列表元素')
 	}
   }
 }

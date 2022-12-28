@@ -147,13 +147,15 @@ export default {
   },
   methods: {
 	onBtnClick1 () {
-		console.log('click1')
+		this.$fxMessage.success('点击按钮1')
 	},
 	onBtnClick2 () {
-		console.log('click2')
+		this.$fxMessage.success('点击按钮2')
+
 	},
 	onBtnClick3 () {
-		console.log('click3')
+		this.$fxMessage.success('点击按钮3')
+
 	}
   }
 }
